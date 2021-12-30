@@ -1,7 +1,7 @@
-body{
+/* body{
     padding:150px 0px 0px 0px;
     z-index: 0;
-}
+} */
 
 
 .row-header{
@@ -16,14 +16,16 @@ body{
     min-height:400px;
 }
 
+address{
+    font-size: 80%;
+    margin: 0px;
+    color:#0f0f0f;
+}
+
+
 .footer{
     background-color: #D1C4E9;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
 
-address{
-    font-size: 80%;
-    margin: 0px;
-    color:#0f0f0f;
-}
