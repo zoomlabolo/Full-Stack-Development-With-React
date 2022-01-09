@@ -113,7 +113,7 @@
                         <img class="d-block img-fluid"
                             src="img/food4.png" alt="Uthappizza">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Biriyani <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
+                            <h2>Biriyani <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$10.99</span></h2>
                             . . .
                         </div>
                     </div>
@@ -136,6 +136,16 @@
                     </a>
                     <!-- add the left and right controls -->
 
+                    <!--Adding Play and Pause Buttons-->
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
+                    <!--Adding Play and Pause Buttons-->
 
                 </div>
             </div>
@@ -310,6 +320,16 @@
         //Reserve Seat--Tooltip
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
         });
     </script>
     <!--Javascript Script Ended-->
